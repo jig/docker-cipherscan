@@ -8,4 +8,4 @@ RUN git clone https://github.com/jvehent/cipherscan.git
 WORKDIR /git/cipherscan
 
 ENTRYPOINT ["/git/cipherscan/cipherscan"]
-CMD --help
+CMD ["--help"]

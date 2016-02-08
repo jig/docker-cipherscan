@@ -1,4 +1,5 @@
-FROM ubuntu
+FROM jordi/ubuntu
+MAINTAINER Jordi Íñigo Griera
 
 RUN apt-get update
 RUN apt-get -y install git-core python bsdmainutils

@@ -1,12 +1,7 @@
-FROM jordi/ubuntu
+FROM alpine
 MAINTAINER Jordi Íñigo Griera
 
-RUN apt-get update
-RUN apt-get -y install git-core python bsdmainutils
-RUN apt-get -y install curl python-six
-
-WORKDIR /root
-ADD bash_history .bash_history
+RUN apk --no-cache add bash git python
 WORKDIR /git
 RUN git clone https://github.com/jvehent/cipherscan.git
 WORKDIR /git/cipherscan
@@ -17,3 +12,4 @@ RUN ln -s .python-ecdsa/src/ecdsa ecdsa
 
 ENTRYPOINT ["/git/cipherscan/cipherscan"]
 CMD ["--help"]
+

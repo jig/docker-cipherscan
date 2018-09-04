@@ -1,3 +1,6 @@
+![Docker Automated](https://img.shields.io/docker/automated/jordi/cipherscan.svg)
+![Docker Build](https://img.shields.io/docker/build/jordi/cipherscan.svg)
+
 # docker-cipherscan
 
 Dockerized version of [github.com/jvehent/cipherscan](https://github.com/jvehent/cipherscan)
